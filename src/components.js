@@ -32,7 +32,7 @@ function getFormComponent(type, options) {
     if (type === t.Boolean) {
       return Checkbox // eslint-disable-line no-use-before-define
     } else if (type === t.Date) {
-      return Datetime // eslint-disable-line no-use-before-define
+      return new Date(Datetime) // eslint-disable-line no-use-before-define
     }
     return Textbox // eslint-disable-line no-use-before-define
   case 'struct' :
